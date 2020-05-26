@@ -20,7 +20,7 @@ namespace EmployeeManager.Models
         [Display(Name = "Frist Name")]
         [Required(ErrorMessage = "Frist Name is required")]
         [StringLength(20, ErrorMessage = "Frist Name must be lass than 20 charactors")]
-        public string FristName { get; set; }
+        public string FirstName { get; set; }
 
         [Display(Name = "Last Name")]
         [Required(ErrorMessage = "Last Name is required")]
@@ -43,7 +43,7 @@ namespace EmployeeManager.Models
         [Display(Name = "Conutry")]
         [Required(ErrorMessage = "Conutry is required")]
         [StringLength(20, ErrorMessage = "Conutry must be lass than 20 charactors")]
-        public string Conutry { get; set; }
+        public string Country { get; set; }
 
         [Display(Name = "Notes")]
         [StringLength(500, ErrorMessage = "Notes must be lass than 500 charactors")]

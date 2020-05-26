@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+}
+
+@model Employee
+<h1>Delete Existing Employee</h1>
+<h2 class="message">Warning: Yo are about to delete an employee record.</h2>
+
+<form asp-controller="EmployeeManager" asp-action="Delete" method="post">
+    <input tpe="hidden" asp-for="EmployeeID" />
+    <table border="0">
+        <tr>
+            <td class="right">
+                <label asp-for="EmployeeID">:</label>
+            </td>
+            <td>
+                @Model.EmployeeID
+            </td>
+        </tr>
+        <tr>
+            <td  class="right">
+                <label asp-for="FirstName">:</label>
+            </td>
+            <td>
+                @Model.FirstName
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<a asp-controller="EmployeeManager" asp-action="List">Back to Employee Listing</a>
