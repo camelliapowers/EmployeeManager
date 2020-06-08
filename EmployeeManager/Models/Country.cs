@@ -12,7 +12,7 @@ namespace EmployeeManager.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ConutryID { get; set; }
+        public int CountryID { get; set; }
        
         public string Name { get; set; }
 
